@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chat</title>
+  <link rel="stylesheet" href="chat.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="main-chat-wrapper">
+    <div class="alligner">
+    <div class="user-list"></div>
+    <div class="chat-container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;  background: lightgreen;  border-radius: 10px;">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <div>
+          <h2 class="chat-header">Chat</h2>
+          <div class="chat-subheader">Connecting...</div>
+        </div>
+        <div>
+          <div class="self" id="user-profile" style="font-size: 0.85rem; color: #333; margin-bottom: 6px;"></div>
+          <button id="logout-btn" class="btn-logout">Logout</button>
+        </div>
+      </div>
+      <div class="chat-messages"></div>
+      <div class="typing-indicator"></div>
+      <form class="chat-input-form">
+        <div class="input-container">
+        <input type="text" class="chat-input" required placeholder="Type your message..." />
+        <button type="submit" class="send-button"><i class='bx  bx-send'  ></i> </button>
+        <button class="clear-chat-button"><i class='bx  bx-trash'  ></i> </button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+  </div>
+  <script type="module" src="chat.js"></script>
+</body>
+</html>
